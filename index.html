@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Blaze Arena Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen p-4">
+
+  <div class="max-w-lg mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+    <div class="bg-gradient-to-r from-purple-600 to-red-500 text-white text-center py-4">
+      <h1 class="text-3xl font-bold">🔥 Blaze Arena Registration 🔥</h1>
+    </div>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data" class="p-6 space-y-4">
+      <input name="uid" required placeholder="Free Fire UID" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      <input name="mobile" required placeholder="Mobile Number" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      <input name="utr" required placeholder="UTR / Transaction ID" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      
+      <label class="block font-semibold text-gray-700">Upload Payment Screenshot (optional)</label>
+      <input type="file" name="screenshot" accept="image/*" class="w-full p-2 border border-gray-300 rounded" />
+
+      <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 font-semibold rounded transition duration-200">Submit Registration</button>
+    </form>
+
+    <div class="p-6 border-t text-sm text-gray-700 bg-gray-50">
+      <h2 class="text-lg font-semibold mb-2 text-purple-600">📌 Instructions:</h2>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Entry Fee: ₹20 (pay to UPI ID: <strong>8873132662-3@ibl</strong>)</li>
+        <li>Enter correct Free Fire UID, Mobile, and UTR</li>
+        <li>Screenshot is optional, but recommended</li>
+        <li>After submission, you will be added in next match</li>
+      </ul>
+
+      <div class="mt-6 text-center">
+        <h3 class="font-semibold text-gray-800 mb-2">Pay here 👇</h3>
+        <img src="QR.png" alt="Pay QR" class="w-52 mx-auto border rounded-lg shadow-md" />
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
